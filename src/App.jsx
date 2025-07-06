@@ -3,6 +3,7 @@ import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import Featuers from "./sections/Featuers";
 import Pricing from "./sections/Pricing";
+import Faq from "./sections/Faq";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <Featuers />
       <Pricing />
+      <Faq />
     </main>
   );
 };

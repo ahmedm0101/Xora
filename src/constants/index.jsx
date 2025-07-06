@@ -133,7 +133,7 @@ export const plans = [
     caption: "Most popular plan",
     features: [
       "All Starter features",
-      "1TB additional storage",
+      "10TB additional storage",
       "Unlimited projects",
       "Analytics",
     ],
@@ -148,7 +148,7 @@ export const plans = [
     caption: "Exclusively for teams",
     features: [
       "All Overdrive features",
-      "10TB additional storage",
+      "1TB additional storage",
       "50% off per member",
       "Real-time collaboration",
     ],
