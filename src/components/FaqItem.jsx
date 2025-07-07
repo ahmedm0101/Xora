@@ -14,20 +14,22 @@ const FaqItem = ({ item, index }) => {
           setActiveId(activeId === item.id ? null : item.id);
         }}
       >
-        <div className="flex-1">
-          <div className="small-compact mb-1.5 text-p3 max-lg:hidden">
-            {index < 10 ? "0" : ""}
-            {index}
-          </div>
+        <div className="flex-1 relative">
+          {/* Before index */}
+          <span className="absolute -left-5 -top-4 text-p3 small-compact max-lg:hidden">
+            {index < 9 ? `0${index + 1}` : index + 1}
+          </span>
+
           <div
             className={clsx(
               "h6 text-p4 transition-colors duration-500 max-md:flex max-md:items-center max-md:min-h-20",
-              active && "max-lg:text-p1"
+              active && "sm:text-p1 max-sm:text-p1"
             )}
           >
             {item.question}
           </div>
         </div>
+
         <div
           className={clsx(
             "faq-icon relative flex justify-center items-center size-12 border-2 rounded-full border-s2 shadow-400 transition-all duration-500 group-hover:border-s4",
